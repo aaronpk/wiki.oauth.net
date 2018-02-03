@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="http://vs1.pbworks.com/shared/statics/embedded-m-prod-v15015099.css" />  
+<style>  body, body.wikipage, body.has-ws-nav.wikipage, body #ws-nav ul.nav-tabs #ws-nav-wiki.active { background-color:#FEFFF3 ; }  #wikipage-inner  p,body.wikistyle p, #wikipage-inner  div, #wikipage-inner li { color:#121212 ; }  .wikistyle h4, .wikistyle h3, .wikistyle h2, .wikistyle h1 { color:#444444 ; }  ul#main-tools li a,ul#secondary-tools li a, div#top-content a, #ws-nav ul.nav-tabs #ws-nav-wiki.active a { color:#4576BE ; }  ul#main-tools, input#input-search, body.login table.inner, body.login #standalone-login table.inner, body.login table.inner td.table-col-2, div.workspace-panel-outer { border-color:#B5DC7D ; }  div#page-toolbar, body.login table.inner, #workspace-header, body.has-ws-nav #page-footer, body.login.has-ws-nav #page-footer, body.has-ws-nav.login, div#page-footer, div#page-footer .footer { background-color:#B5DC7D ; }  h1.pagetitle { color:#000000 ; }  #wikipage-inner a, div#page-side-toolbar ul a, div.page-history a { color:#4576BE ; }  td#page-col-2, div#page-bottom-toolbar { background-color:#FFFFFF ; }  div#page-footer .content div { color:#5F6258 ; }  div#page-footer div.content a, #print_link { color:#444444 ; }  body.has-ws-nav #page-footer { border-color:#444444 ; }  .wikicontext-module p, .wikicontext-module li { color:#555555 ; }  .wikicontext-module .header { border-color:#C9F518 ; }  .wikicontext-module .header { background-color:#C9F518 ; }  .wikicontext-module .header { color:#3C4E10 ; }  #side-content * a { color:#444444 ; }  #ws-nav, #workspace-header { background-color:#B5DC7D ; }  #ws-nav ul.nav-tabs li { background-color:#C9F518 ; }  #ws-nav ul.nav-tabs li a, #page-toolbar-inner div a { color:#3C4E10 ; }  div#view-tab.active { background-image: url(/theme_image.php?seg=l&colortime=1220488986) } div#page-toolbar-inner { background-image: url(/theme_image.php?seg=m&colortime=1220488986) } div#page-toolbar { background-image: url(/theme_image.php?seg=n&colortime=1220488986) } td#page-col-1 { background-image: url(/theme_image.php?seg=i&colortime=1220488986) } td#page-col-3 { background-image: url(/theme_image.php?seg=j&colortime=1220488986) } div#page-side-toolbar div.header { background-image: url(/theme_image.php?seg=c&colortime=1220488986) } div#page-side-toolbar { background-image: url(/theme_image.php?seg=b&colortime=1220488986) } div#page-side-toolbar ul { background-image: url(/theme_image.php?seg=a&colortime=1220488986) } div#page-footer .header .lt { background-image: url(/theme_image.php?seg=f&colortime=1220488986) } div#page-footer .header .rt { background-image: url(/theme_image.php?seg=h&colortime=1220488986) } div#page-footer .header { background-image: url(/theme_image.php?seg=g&colortime=1220488986) } div#page-footer .footer .lt { background-image: url(/theme_image.php?seg=e&colortime=1220488986) } div#page-footer .footer .rt { background-image: url(/theme_image.php?seg=d&colortime=1220488986) } div#edit-tab.active { background-image: url(/theme_image.php?seg=k&colortime=1220488986) } div#view-tab { background-image: url(/theme_image.php?seg=o&colortime=1220488986) } body.has-ws-nav #ws-nav ul.nav-tabs { background-image: url(/theme_image.php?seg=v&colortime=1220488986) } body.has-ws-nav #ws-nav ul.nav-tabs.active-tab-wiki { background-image: url(/theme_image.php?seg=p&colortime=1220488986) } body.has-ws-nav #ws-nav ul.nav-tabs.first-tab-active-not-wiki { background-image: url(/theme_image.php?seg=r&colortime=1220488986) } body.has-ws-nav #ws-nav ul.nav-tabs li { background-image: url(/theme_image.php?seg=w&colortime=1220488986) } body.has-ws-nav #ws-nav ul.nav-tabs li.active { background-image: url(/theme_image.php?seg=t&colortime=1220488986) } body.has-ws-nav #ws-nav ul.nav-tabs li.next-active { background-image: url(/theme_image.php?seg=s&colortime=1220488986) } body.has-ws-nav #ws-nav ul.nav-tabs li.last { background-image: url(/theme_image.php?seg=x&colortime=1220488986) } body.has-ws-nav #ws-nav ul.nav-tabs li.last-active { background-image: url(/theme_image.php?seg=u&colortime=1220488986) } body.has-ws-nav #ws-nav ul.nav-tabs #ws-nav-wiki.active { background-image: url(/theme_image.php?seg=q&colortime=1220488986) } div#page-bottom-toolbar { background:none; } body.wikistyle { background-color:#FFFFFF !important } #comments .comments-header .corner4px { visibility: hidden; } #comments .comments-header { border-radius:4px; } </style><title></title>
+<base target="_top" />
+</head>
+<body class="wikistyle unknown">
+<h1>OAuth 2 for Native Apps</h1>
+<br />
+<div id="displaycontent">
+<h2 id="internal-source-marker_0.015859327591761674"><span style="font-size:150%;font-family:Arial;color:#000000;">Flows</span></h2>
+<p><span style="font-size:100%;font-family:Arial;color:#000000;">While all OAuth 2 flows can be used by native apps, only the user delegation flows will be considered in this document: Web Server, User-Agent and Device flows.</span><br /><br /><span style="font-size:100%;font-family:Arial;color:#000000;">The Web Server and User-Agent flows are similar in that information in the browser must be captured by the native app at some point. Transferring control and information from the browser back to the native app is a hard problem. The next section lists techniques that allow that.</span><br /><br /><span style="font-size:100%;font-family:Arial;color:#000000;">The Device flow does not have the above problem, but it has a potential session fixation vulnerability. Also, this flow is relatively new and it was not used by native apps so it is not proved in practice.</span><br /><br /><span style="font-size:100%;font-family:Arial;color:#000000;">Changes needed by current spec so native apps are supported:</span></p>
+<ul>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">Web Server flow</span></li>
+<ul>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">define standard result page if redirect_uri is missing</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">make sure unregistered clients are properly supported</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">make sure registered by insecure clients are supported</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">display name parameter may be required</span></li>
+</ul>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">User-Agent flow</span></li>
+<ul>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">display name parameter may be required</span></li>
+</ul>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">Device flow</span></li>
+<ul>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">should define standard parameter name for user code</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">display name parameter may be required</span></li>
+</ul>
+</ul>
+<p>&nbsp;</p>
+<h2><span style="font-size:150%;font-family:Arial;color:#000000;">Information Transfer Techniques</span></h2>
+<p><span style="font-size:100%;font-family:Arial;color:#000000;">After the end user approves that the native application gets access to the requested scopes the user-agent is redirected to the redirect_uri. The result page at the redirect_uri should display the information that the native application needs along with instructions for the end user. This information is a verification code (Web Server flow) or access/refresh tokens (User-Agent flow). The information can also include some client state, if it was initially sent by the client.</span><br /><br /><span style="font-size:100%;font-family:Arial;color:#000000;">If the end user denies access, then ideally the result page should also be displayed but the information will be a relevant error code and some explanation for the end user.</span><br /><br /><span style="font-size:100%;font-family:Arial;color:#000000;">The following techniques allow native applications to extract the needed information from the result page.</span></p>
+<p>&nbsp;</p>
+<h3><span style="font-size:130%;font-family:Arial;color:#000000;">Manual copy-and-paste</span></h3>
+<p><span style="font-size:100%;font-family:Arial;color:#000000;">The result page shows only one piece of text that the end user can copy and then should paste into the native app. Instructions on how to do that should also be provided. The text to be copied could be a single code/token or an encoded data structure.</span><br /><br /><span style="font-size:100%;font-family:Arial;color:#000000;">The authorization dance can happen on a different machine and be controller by a separate web server. The native app could instruct the user to go to a URL and grab an activation code from there. The web application at the URL will start the OAuth dance with the same client Id as used by the native app and at the end show an appropriate result page.</span><br /><br /><span style="font-size:100%;font-family:Arial;color:#000000;">Pros:</span></p>
+<ul>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">easy to implement</span></li>
+</ul>
+<p><br /><span style="font-size:100%;font-family:Arial;color:#000000;">Cons:</span></p>
+<ul>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">loop is not closed automatically</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">user has to copy-paste or memorize-type</span></li>
+</ul>
+<p>&nbsp;</p>
+<h3><span style="font-size:130%;font-family:Arial;color:#000000;">Automatic copy-and-paste</span></h3>
+<p><span style="font-size:100%;font-family:Arial;color:#000000;">The result page uses JavaScript and/or Flash to copy the information to the system clipboard. The native application is watching the clipboard in a loop.</span><br /><br /><span style="font-size:100%;font-family:Arial;color:#000000;">Pros:</span></p>
+<ul>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">good user experience</span></li>
+</ul>
+<p><br /><span style="font-size:100%;font-family:Arial;color:#000000;">Cons:</span></p>
+<ul>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">hard to copy to system clipboard from HTML page, may need flash</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">text copied to clipboard can be seen by other apps, can leak, may need to encrypt</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">native app must ensure it grabs the proper text from clipboard, client state can help</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">requires JavaScript to be enabled in browser to copy to clipboard</span></li>
+</ul>
+<p>&nbsp;</p>
+<h3><span style="font-size:130%;font-family:Arial;color:#000000;">Custom URI Scheme</span></h3>
+<p><span style="font-size:100%;font-family:Arial;color:#000000;">The native app registers a custom URI scheme that will launch the application itself, or a helper app. The redirect_uri would use this scheme.</span><br /><br /><span style="font-size:100%;font-family:Arial;color:#000000;">Pros:</span></p>
+<ul>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">good user experience</span></li>
+</ul>
+<p><br /><span style="font-size:100%;font-family:Arial;color:#000000;">Cons:</span></p>
+<ul>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">no standard way to register schemes</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">possible security issues if a newer app grabs an existing scheme</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">does not work as well on desktop apps as on phones</span></li>
+</ul>
+<p>&nbsp;</p>
+<h3><span style="font-size:130%;font-family:Arial;color:#000000;">Local Web Server</span></h3>
+<p><span style="font-size:100%;font-family:Arial;color:#000000;">The native app starts a local web server on some available port and the redirect_uri will point to this server.</span><br /><br /><span style="font-size:100%;font-family:Arial;color:#000000;">Pros:</span></p>
+<ul>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">good user experience</span></li>
+</ul>
+<p><br /><span style="font-size:100%;font-family:Arial;color:#000000;">Cons:</span></p>
+<ul>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">native app needs to embed a web server</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">local firewall may block access to local web server</span></li>
+</ul>
+<p>&nbsp;</p>
+<h3><span style="font-size:130%;font-family:Arial;color:#000000;">Embedded Browser</span></h3>
+<p><span style="font-size:100%;font-family:Arial;color:#000000;">The native app embeds a browser.</span><br /><br /><span style="font-size:100%;font-family:Arial;color:#000000;">Pros:</span></p>
+<ul>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">good user experience</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">good integration with native app, no focus issues</span></li>
+</ul>
+<p><br /><span style="font-size:100%;font-family:Arial;color:#000000;">Cons:</span></p>
+<ul>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">embedded browser uses different cookie jar, no active session, user forced to login (apparently on Mac and iPhone cookies are shared by embedded browser)</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">no browser plugins present, user may have difficulties to login</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">probably no username/password auto-completion</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">if some form of strong auth is used once per browser the user is forced to do it again</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">what is embedded may not be the user’s preferred browser</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">does not work with CLI apps</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">user still enters credentials in native app</span></li>
+</ul>
+<p>&nbsp;</p>
+<h3><span style="font-size:130%;font-family:Arial;color:#000000;">Monitor Cookies</span></h3>
+<p><span style="font-size:100%;font-family:Arial;color:#000000;">The native app watches the cookie jar of the browser it launched. The result page will save the information to a cookie using JavaScript.</span><br /><br /><span style="font-size:100%;font-family:Arial;color:#000000;">Pros:</span></p>
+<ul>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">good user experience</span></li>
+</ul>
+<p><br /><span style="font-size:100%;font-family:Arial;color:#000000;">Cons:</span></p>
+<ul>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">each browser saves cookies differently</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">access to cookie files cannot be synchronized</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">requires JavaScript to be enabled in browser to save cookie</span></li>
+</ul>
+<p>&nbsp;</p>
+<h3><span style="font-size:130%;font-family:Arial;color:#000000;">Monitor Window Title</span></h3>
+<p><span style="font-size:100%;font-family:Arial;color:#000000;">The native application launches a browser and then keeps tracking the process and the corresponding OS window title. The result page should make sure the information shows up in the window title.</span><br /><br /><span style="font-size:100%;font-family:Arial;color:#000000;">Pros:</span></p>
+<ul>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">good user experience</span></li>
+</ul>
+<p><br /><span style="font-size:100%;font-family:Arial;color:#000000;">Cons:</span></p>
+<ul>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">only shorter text can be transferred</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">no guarantee that each window manager or browser will display the title consistently</span></li>
+</ul>
+<p>&nbsp;</p>
+<h3><span style="font-size:130%;font-family:Arial;color:#000000;">Browser Extension</span></h3>
+<p><span style="font-size:100%;font-family:Arial;color:#000000;">The native app relies on a browser extension it can communicate with. The extension notices when the result page is rendered, extracts the information and passes it to the native app.</span><br /><br /><span style="font-size:100%;font-family:Arial;color:#000000;">Pros:</span></p>
+<ul>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">good user experience</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">only method that can close the loop even if user wanders off or closes browser</span></li>
+</ul>
+<p><br /><span style="font-size:100%;font-family:Arial;color:#000000;">Cons:</span></p>
+<ul>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">extensions must be created for all browser</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">user needs to install extension</span></li>
+</ul>
+<p>&nbsp;</p>
+<h2><span style="font-size:150%;font-family:Arial;color:#000000;">Types of Result Pages</span></h2>
+<ul>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">Dynamic web page controlled by the native app publisher on some external web server.</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">Default dynamic web page provided by the authorization server.</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">Dynamic web page controlled by the native app on local machine.</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">Custom scheme URI that invokes native app or helper.</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">Static HTML page on local machine.</span></li>
+</ul>
+<p>&nbsp;</p>
+<h2><span style="font-size:150%;font-family:Arial;color:#000000;">Types of Native Apps</span></h2>
+<ul>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">GUI Desktop App</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">CLI Desktop App</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">Smart Phone App</span></li>
+</ul>
+<p>&nbsp;</p>
+<h2><span style="font-size:150%;font-family:Arial;color:#000000;">Technique vs Flow</span></h2>
+<table style="border:medium none;" border="0">
+<tbody>
+<tr>
+<td style="border:1px dotted #aaaaaa;">&nbsp;<br /></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Web Server</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">User-Agent</span></td>
+</tr>
+<tr>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Manual copy-paste</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">No</span><sup><span style="font-family:Arial;color:#000000;">1</span></sup></td>
+</tr>
+<tr>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Automatic copy-paste</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span><sup><span style="font-family:Arial;color:#000000;">2</span></sup></td>
+</tr>
+<tr>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Custom Scheme</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span></td>
+</tr>
+<tr>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Local Server</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span></td>
+</tr>
+<tr>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Embedded Browser</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span></td>
+</tr>
+<tr>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Monitor Cookie</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span><sup><span style="font-family:Arial;color:#000000;">2</span></sup></td>
+</tr>
+<tr>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Monitor Title</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">No</span><sup><span style="font-family:Arial;color:#000000;">3</span></sup></td>
+</tr>
+<tr>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Extension</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span></td>
+</tr>
+</tbody>
+</table>
+<p><br /><span style="font-size:100%;font-family:Arial;color:#000000;">Notes:</span></p>
+<ol>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">Access token, expiry time and potentially refresh token all would have to be copied. May not be practical.</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">Important tokens could be leaked.</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">Information probably too long to fit into window title.</span></li>
+</ol>
+<p>&nbsp;</p>
+<h2><span style="font-size:150%;font-family:Arial;color:#000000;">Technique vs Native App Type</span></h2>
+<table style="border:medium none;" border="0">
+<tbody>
+<tr>
+<td style="border:1px dotted #aaaaaa;">&nbsp;<br /></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">GUI Desktop</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">CLI Desktop</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Smart Phone</span></td>
+</tr>
+<tr>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Manual copy-paste</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">No</span><sup><span style="font-family:Arial;color:#000000;">1</span></sup></td>
+</tr>
+<tr>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Automatic copy-paste</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">?</span></td>
+</tr>
+<tr>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Custom Scheme</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span><sup><span style="font-family:Arial;color:#000000;">2</span></sup></td>
+</tr>
+<tr>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Local Server</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">No</span></td>
+</tr>
+<tr>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Embedded Browser</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">No</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span></td>
+</tr>
+<tr>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Monitor Cookie</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">?</span></td>
+</tr>
+<tr>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Monitor Title</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">No</span></td>
+</tr>
+<tr>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Extension</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">Yes</span></td>
+<td style="border:1px dotted #aaaaaa;"><span style="font-size:100%;font-family:Arial;color:#000000;">No</span></td>
+</tr>
+</tbody>
+</table>
+<p><br /><span style="font-size:100%;font-family:Arial;color:#000000;">Notes:</span></p>
+<ol>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">Could work for simple verification code. Approval can even be done on a different computer.</span></li>
+<li><span style="font-size:100%;font-family:Arial;color:#000000;">This seems to work particularly well for phone apps.</span></li>
+</ol>
+<p><span style="font-size:100%;font-family:Arial;color:#000000;">&nbsp;</span></p>
+</div>
+</body>
+</html><!-- v=2,newpbj=1,utz=x,ssl=0,ua=Unk-Unknown-0,uid=0,sn=01006f3b57ebf9bc8fd6aadb0a349f9e,pid=28835,hn=appserver003,nw=0,w=oauth,pv=pub,pkg=p3,perm=none,crea=1189744324,mt=1402197575,sc=439,cl=1,cat=edu,mpu=7,NQsid=1,Ncd=0.0004,Nkb=13,Nct=0.0577,Ncl=1517633893.5564,Nwc=1,Nwt=1517633893.5653,sid=12238493,pn=OAuth%202%20for%20Native%20Apps,Ncif=1,oid=27249271,Ncih=7,pc=1,pq=1,te=0.090 -->

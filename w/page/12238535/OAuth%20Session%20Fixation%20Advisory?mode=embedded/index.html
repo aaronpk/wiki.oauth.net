@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="http://vs1.pbworks.com/shared/statics/embedded-m-prod-v15015099.css" />  
+<style>  body, body.wikipage, body.has-ws-nav.wikipage, body #ws-nav ul.nav-tabs #ws-nav-wiki.active { background-color:#FEFFF3 ; }  #wikipage-inner  p,body.wikistyle p, #wikipage-inner  div, #wikipage-inner li { color:#121212 ; }  .wikistyle h4, .wikistyle h3, .wikistyle h2, .wikistyle h1 { color:#444444 ; }  ul#main-tools li a,ul#secondary-tools li a, div#top-content a, #ws-nav ul.nav-tabs #ws-nav-wiki.active a { color:#4576BE ; }  ul#main-tools, input#input-search, body.login table.inner, body.login #standalone-login table.inner, body.login table.inner td.table-col-2, div.workspace-panel-outer { border-color:#B5DC7D ; }  div#page-toolbar, body.login table.inner, #workspace-header, body.has-ws-nav #page-footer, body.login.has-ws-nav #page-footer, body.has-ws-nav.login, div#page-footer, div#page-footer .footer { background-color:#B5DC7D ; }  h1.pagetitle { color:#000000 ; }  #wikipage-inner a, div#page-side-toolbar ul a, div.page-history a { color:#4576BE ; }  td#page-col-2, div#page-bottom-toolbar { background-color:#FFFFFF ; }  div#page-footer .content div { color:#5F6258 ; }  div#page-footer div.content a, #print_link { color:#444444 ; }  body.has-ws-nav #page-footer { border-color:#444444 ; }  .wikicontext-module p, .wikicontext-module li { color:#555555 ; }  .wikicontext-module .header { border-color:#C9F518 ; }  .wikicontext-module .header { background-color:#C9F518 ; }  .wikicontext-module .header { color:#3C4E10 ; }  #side-content * a { color:#444444 ; }  #ws-nav, #workspace-header { background-color:#B5DC7D ; }  #ws-nav ul.nav-tabs li { background-color:#C9F518 ; }  #ws-nav ul.nav-tabs li a, #page-toolbar-inner div a { color:#3C4E10 ; }  div#view-tab.active { background-image: url(/theme_image.php?seg=l&colortime=1220488986) } div#page-toolbar-inner { background-image: url(/theme_image.php?seg=m&colortime=1220488986) } div#page-toolbar { background-image: url(/theme_image.php?seg=n&colortime=1220488986) } td#page-col-1 { background-image: url(/theme_image.php?seg=i&colortime=1220488986) } td#page-col-3 { background-image: url(/theme_image.php?seg=j&colortime=1220488986) } div#page-side-toolbar div.header { background-image: url(/theme_image.php?seg=c&colortime=1220488986) } div#page-side-toolbar { background-image: url(/theme_image.php?seg=b&colortime=1220488986) } div#page-side-toolbar ul { background-image: url(/theme_image.php?seg=a&colortime=1220488986) } div#page-footer .header .lt { background-image: url(/theme_image.php?seg=f&colortime=1220488986) } div#page-footer .header .rt { background-image: url(/theme_image.php?seg=h&colortime=1220488986) } div#page-footer .header { background-image: url(/theme_image.php?seg=g&colortime=1220488986) } div#page-footer .footer .lt { background-image: url(/theme_image.php?seg=e&colortime=1220488986) } div#page-footer .footer .rt { background-image: url(/theme_image.php?seg=d&colortime=1220488986) } div#edit-tab.active { background-image: url(/theme_image.php?seg=k&colortime=1220488986) } div#view-tab { background-image: url(/theme_image.php?seg=o&colortime=1220488986) } body.has-ws-nav #ws-nav ul.nav-tabs { background-image: url(/theme_image.php?seg=v&colortime=1220488986) } body.has-ws-nav #ws-nav ul.nav-tabs.active-tab-wiki { background-image: url(/theme_image.php?seg=p&colortime=1220488986) } body.has-ws-nav #ws-nav ul.nav-tabs.first-tab-active-not-wiki { background-image: url(/theme_image.php?seg=r&colortime=1220488986) } body.has-ws-nav #ws-nav ul.nav-tabs li { background-image: url(/theme_image.php?seg=w&colortime=1220488986) } body.has-ws-nav #ws-nav ul.nav-tabs li.active { background-image: url(/theme_image.php?seg=t&colortime=1220488986) } body.has-ws-nav #ws-nav ul.nav-tabs li.next-active { background-image: url(/theme_image.php?seg=s&colortime=1220488986) } body.has-ws-nav #ws-nav ul.nav-tabs li.last { background-image: url(/theme_image.php?seg=x&colortime=1220488986) } body.has-ws-nav #ws-nav ul.nav-tabs li.last-active { background-image: url(/theme_image.php?seg=u&colortime=1220488986) } body.has-ws-nav #ws-nav ul.nav-tabs #ws-nav-wiki.active { background-image: url(/theme_image.php?seg=q&colortime=1220488986) } div#page-bottom-toolbar { background:none; } body.wikistyle { background-color:#FFFFFF !important } #comments .comments-header .corner4px { visibility: hidden; } #comments .comments-header { border-radius:4px; } </style><title></title>
+<base target="_top" />
+</head>
+<body class="wikistyle unknown">
+<h1>OAuth Session Fixation Advisory</h1>
+<br />
+<div id="displaycontent">
+<p>There is a <a href="http://blog.oauth.net/2009/04/22/acknowledgement-of-the-oauth-security-issue/">session fixation attack</a> against OAuth 1.0. &nbsp;There is a <a href="http://oauth.net/advisories/2009-1">security advisory</a>.</p>
+<p>There have been a lot of mailing list threads on this. &nbsp;There was a meetup on Friday to talk about the problem.&nbsp;Folks from Yahoo, MySpace, Google, LinkedIn, and Plaxo attended. &nbsp;We discussed two proposals:</p>
+<ul>
+<li><a href="/Signed-Callback-URLs">Signed Callback URLs</a></li>
+<li><a href="/Signed-Approval-URLs">Signed Approval URLs</a></li>
+</ul>
+<p>(A large number of other proposals were discussed briefly, but aren't covered here because they either didn't fix the problem, seemed more complicated, or did sufficient harm to the user experience that we thought they would drive people back to asking for usernames and passwords. &nbsp;For an exhaustive list of possible solutions, see the <a href="http://groups.google.com/group/oauth/browse_frm/month/2009-04">mailing list threads</a> from mid-April 2009.)</p>
+<p>&nbsp;</p>
+<h2>Comparision of proposals:</h2>
+<p><strong>Does it work if the consumer application can't read data off the callback URL (e.g. an installed application that doesn't integrate with the web browser in any way)?</strong></p>
+<p>Signed callback URLs: yes. &nbsp;Code is short, user types it in.</p>
+<p>Signed Approval URLs: no. &nbsp;Callback token has to be long, users can't type it.</p>
+<p>&nbsp;</p>
+<p><strong>Does it work if the consumer cannot launch arbitrary URLs (e.g. device with no web browser built-in)?</strong></p>
+<p>Signed Callback URLs:&nbsp;&nbsp;yes. &nbsp;Consumer displays request token, user visits URL at SP and types in request token.</p>
+<p style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; line-height: 1.5em; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; color: rgb(18, 18, 18);">Signed Approval URLs: no. &nbsp;Approval URLs are too long.</p>
+<div>&nbsp;</div>
+<p><strong>Does it work if the consumer has no character input (e.g. device with no keyboard)?</strong></p>
+<p>Signed callback URLs:&nbsp;&nbsp;no.</p>
+<p>Signed approval URLs:&nbsp;&nbsp;no.</p>
+<p>We need another proposal to handle these devices. &nbsp;We may need to continue to use OAuth 1.0 for devices that have no keyboard and no web browser available.</p>
+<p>&nbsp;</p>
+<p><strong>What if the device has no display capability (e.g. manufacturer includes request token in instruction manual for device)?</strong></p>
+<p>Signed callback URLs:&nbsp;&nbsp;no.</p>
+<p>Signed approval URLs:&nbsp;&nbsp;no.</p>
+<p>We need another proposal to handle these devices. &nbsp;We may need to continue to use OAuth 1.0 for devices that have no display capability.</p>
+<p>&nbsp;</p>
+<p><strong>Does it support UI enhancements such as language extensions?</strong></p>
+<p>Signed callback URLs: &nbsp;yes.</p>
+<p>Signed approval URLs: &nbsp;yes.</p>
+<p>&nbsp;</p>
+<p><strong>Does it have latency impact?</strong></p>
+<p>Signed callback URLs: no.</p>
+<p>Signed approval URLs:&nbsp;probably a latency reduction, since there is no request token roundtrip.</p>
+<p>&nbsp;</p>
+<p><strong>Is there a smooth upgrade path from OAuth 1.0 to the fixed protocol?</strong></p>
+<p>Signed callback URLs:&nbsp;consumer detects whether SP supports new protocol by sending oauth_callback parameter on request token step and checking for confirmation in SP response. &nbsp;SPs can be backwards compatible with both old and new consumers fairly easily by checking for presence of oauth_token and oauth_signature on approval URL. &nbsp;(No downgrade attack is possible.)</p>
+<p>Signed approval URLs: consumers must know whether SPs support new protocol. &nbsp;SPs can be backwards compatible with both old and new consumers fairly easily by checking for presence of oauth_token and oauth_signature on approval URL. &nbsp;(No downgrade attack is possible.)</p>
+<p>&nbsp;</p>
+<p><strong>Does it work for web applications that can keep consumer secrets, but no fixed callback URLs?</strong></p>
+<p>Signed callback URLs: yes, unless SPs require callback URL preregistration.</p>
+<p>Signed approval URLs:&nbsp;yes, unless SPs require callback URL preregistration.</p>
+<p>&nbsp;</p>
+<p><strong>Does it work for web applications that can't keep consumer secrets, and don't have a fixed callback URL?</strong></p>
+<p>Signed callback URLs: yes, unless SP requires callback URL preregistration. &nbsp;SPs must identify application by callback URL, not by consumer key.</p>
+<p>Signed approval URLs:&nbsp;yes, unless SP requires callback URL preregistration. &nbsp;SPs must identify application by callback URL, not by consumer key.</p>
+<p>&nbsp;</p>
+<p><strong>Does it work for web applications that can't keep consumer secrets, but do have a fixed callback URL (e.g. desktop app that registers protocol handler or otherwise integrates with browser)?</strong></p>
+<p>Signed callback URLs: yes.</p>
+<p>Signed approval URLs:&nbsp;yes.</p>
+<p>&nbsp;</p>
+<h2><strong>Other comments:</strong></h2>
+<p><strong>Exotic protocol flows:</strong>&nbsp;&nbsp;Signed approval URLs seems much more similar to OpenID, SAML, BBAuth, AuthSub, and most other web authentication and authorization protocols. &nbsp; &nbsp;Signed callback URLs is like a combination of those protocols with the OAuth 1.0 protocol.</p>
+<p>&nbsp;</p>
+<p><strong>Large amounts of data on request token step</strong>: Signed callbacks allow consumers and service providers to pass large amounts of data on POSTs to the request token URL. &nbsp;Signed approval URLs hit URL length limitations if large data transfer is necessary. &nbsp;(Nobody has use cases that require large data transfer prior to authorization, so this seems irrelevant.)</p>
+<p>&nbsp;</p>
+<p><strong>Simplicity:</strong>&nbsp;&nbsp;the signed approval URL flow has fewer steps. &nbsp;If someone was starting from scratch they probably would rather use this flow for applications with callback URLs (web apps, smart installed apps), and a separate flow for other apps that don't have callback URLs. &nbsp;On the other hand, the signed approval URL flow requires managing signed URLs in the browser. &nbsp;Service providers need to be careful not to break the "back" button in the browser.</p>
+<p>&nbsp;</p>
+<p><strong>Security:</strong> we agree that the addition of the callback token fixes the protocol. &nbsp;The lack of the request token step in the Signed Approval URL protocol means that if</p>
+<ul type="a">
+<li>the consumer secret is not secret (installed application) AND</li>
+<li>the service provider or consumer does not use https</li>
+</ul>
+<p>an eavesdropper gets all the information they need to obtain an access token. &nbsp;The same is not true of the Signed Callback URL proposal. &nbsp;In that case eavesdropping is not sufficient, an active attack where the victim is redirected with the attacker's request token is necessary.</p>
+<p>There has been a lot of brainstorming in the past week about possible attacks, with lots of good ideas on things that consumers and service providers can do to make themselves more secure. &nbsp;We think either of the proposals above will fix the problems in the protocol, which is the most critical thing. &nbsp;We're going to consolidate the other ideas into a security best practices checklist that consumers and service providers can use.</p>
+<p>&nbsp;</p>
+<p>One item for that checklist:&nbsp;XSRF protection on the callback URL. &nbsp;Eran's blog post mentions that consumers should check "<span class="Apple-style-span" style="color: rgb(51, 51, 51); font-family: 'Trebuchet MS'; line-height: 15px;">that the user who starts the process is the same as the one who finishes it". &nbsp;Standard XSRF protection measures work for that purpose.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</div>
+</body>
+</html><!-- v=2,newpbj=1,utz=x,ssl=0,ua=Unk-Unknown-0,uid=0,sn=ac06a23f72a43457e88b15071ffe186c,pid=20453,hn=appserver004,nw=0,w=oauth,pv=pub,pkg=p3,perm=none,crea=1189744324,mt=1402197575,sc=439,cl=1,cat=edu,mpu=7,NQsid=1,Ncd=0.0007,Nkb=13,Nct=0.0577,Ncl=1517633893.5564,Nwc=1,Nwt=1517633893.5653,sid=12238493,pn=OAuth%20Session%20Fixation%20Advisory,Ncif=1,oid=12238535,Ncih=7,pc=1,pq=1,te=0.121 -->
