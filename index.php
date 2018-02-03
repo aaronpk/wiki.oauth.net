@@ -8,12 +8,18 @@ if(preg_match('~/w/page/\d+/(.+\?rev=\d+)~', $request, $match)) {
 }
 
 $htmlfilename = $dir.$request.'/index.html';
+$filename = $dir.$request;
 
 if(file_exists($htmlfilename)) {
   $html = file_get_contents($htmlfilename);
   $html = str_replace('http://vs1.pbworks.com/shared/statics/packed-m-prod-v07998121.css', '/assets/styles.css', $html);
   $html = str_replace('UA-2694787-12', 'UA-4617305-33', $html);
   echo $html;
+} elseif(file_exists($filename)) {
+  if(preg_match('/theme_image/', $filename)) {
+    header('Content-type: image/png');
+  }
+  readfile($filename);
 } else {
   header('HTTP/1.1 404 Not Found');
   ?>
