@@ -14,6 +14,10 @@ if(file_exists($htmlfilename)) {
   $html = file_get_contents($htmlfilename);
   $html = str_replace('http://vs1.pbworks.com/shared/statics/packed-m-prod-v07998121.css', '/assets/styles.css', $html);
   $html = str_replace('UA-2694787-12', 'UA-4617305-33', $html);
+
+  $archive_warning = file_get_contents('archived.html');
+  $html = preg_replace('/<body[^>]+>/', '$0'.$archive_warning, $html);
+
   echo $html;
 } elseif(file_exists($filename)) {
   if(preg_match('/theme_image/', $filename)) {
